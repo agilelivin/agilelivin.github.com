@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Clutter the Internet
+title: Episode 1 - Clutter the Internet
 image: episode1_artwork.jpg
+audio_url: http://soundcloud.com/agilelivin/episode1-clutter-the-internet/download.mp3
+author: Steve Holyer &amp; Philipp Küng
+duration: 22:02
 ---
 
 <object height="81" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F20048797&amp;show_comments=true&amp;auto_play=false&amp;color=00AEEF"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F20048797&amp;show_comments=true&amp;auto_play=false&amp;color=00AEEF" type="application/x-shockwave-flash" width="100%"></embed> </object>

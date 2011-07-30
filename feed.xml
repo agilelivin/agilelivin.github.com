@@ -1,0 +1,48 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>agilelivin</title>
+    <link>http://agileliv.in</link>
+    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+    <description>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</description>
+    <language>en-us</language>
+    <itunes:new-feed-url>http://feeds.feedburner.com/agilelivin</itunes:new-feed-url>
+    <itunes:subtitle>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</itunes:subtitle>
+    <itunes:author>agilelivin</itunes:author>
+    <itunes:summary>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</itunes:summary>
+    <itunes:image href="http://agileliv.in/images/single_color_black.png" />
+    <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>agilelivin</itunes:name>
+      <itunes:email>itunes-agilelivin@philippkueng.ch</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology">
+      <itunes:category text="Software How-To" />
+    </itunes:category>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/agilelivin" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="agilelivin" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:thumbnail url="http://agileliv.in/images/single_color_black.png" /><media:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Software How-To</media:category>
+{% for post in site.posts %}
+<item>
+      <title>{{ post.title }}</title>
+      <link>http://agileliv.in{{ post.url }}</link>
+      <guid>http://agileliv.in{{ post.url }}</guid>
+      <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+      <author>{{ post.author }}</author>
+      <description>{{ post.content | xml_escape }}</description>
+      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" />
+      <content:encoded>{{ post.content | xml_escape }}</content:encoded>
+      <itunes:author>{{ post.author }}</itunes:author>
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:subtitle />
+      <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+      <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>
+      <itunes:image href="http://agileliv.in/images/{{ post.image }}" />
+    <media:content url="{{ post.audio_url }}" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit>
+</item>
+{% endfor %}
+  <media:credit role="author">agilelivin</media:credit><media:rating>nonadult</media:rating>
+<media:description type="plain">A weekly show about agile practises applied to life and vice versa. Hosted by Steve Holyer &amp; Philipp Kueng.</media:description></channel>
+</rss>

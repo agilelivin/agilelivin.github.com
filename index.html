@@ -5,5 +5,6 @@ title: agilelivin
 
 {% for post in site.posts limit:5 %}
 <h2><a href="{{ post.url }}"><img src="../images/{{ post.image }}" alt="{{ post.title }}" /></a></h2>
+{{ post.soundcloud }}
 {{ post.content }}
 {% endfor %}

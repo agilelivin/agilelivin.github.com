@@ -31,7 +31,7 @@ layout: nil
       <guid>http://agileliv.in{{ post.url }}</guid>
       <pubDate>{{ site.time | date_to_long_string }}</pubDate>
       <author>{{ post.author }}</author>
-      <description>{{ post.content | xml_escape }}</description>
+      <description>{{ post.summary }}</description>
       <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length={{ post.audio_length }} />
       <content:encoded>{{ post.content | xml_escape }}</content:encoded>
       <itunes:author>{{ post.author }}</itunes:author>

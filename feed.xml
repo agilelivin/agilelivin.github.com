@@ -32,7 +32,7 @@ layout: nil
       <pubDate>{{ site.time | date_to_long_string }}</pubDate>
       <author>{{ post.author }}</author>
       <description>{{ post.summary }}</description>
-      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length={{ post.audio_length }} />
+      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length="{{ post.audio_length }}" />
       <content:encoded>{{ post.content | xml_escape }}</content:encoded>
       <itunes:author>{{ post.author }}</itunes:author>
       <itunes:duration>{{ post.duration }}</itunes:duration>

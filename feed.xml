@@ -6,7 +6,7 @@ layout: nil
   <channel>
     <title>agilelivin</title>
     <link>http://agileliv.in</link>
-    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+    <pubDate>{{ site.time | date_to_long_string }}</pubDate>
     <description>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</description>
     <language>en-us</language>
     <itunes:new-feed-url>http://feeds.feedburner.com/agilelivin</itunes:new-feed-url>
@@ -29,15 +29,15 @@ layout: nil
       <title>{{ post.title }}</title>
       <link>http://agileliv.in{{ post.url }}</link>
       <guid>http://agileliv.in{{ post.url }}</guid>
-      <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+      <pubDate>{{ site.time | date_to_long_string }}</pubDate>
       <author>{{ post.author }}</author>
       <description>{{ post.content | xml_escape }}</description>
-      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" />
+      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length={{ post.audio_length }} />
       <content:encoded>{{ post.content | xml_escape }}</content:encoded>
       <itunes:author>{{ post.author }}</itunes:author>
       <itunes:duration>{{ post.duration }}</itunes:duration>
       <itunes:subtitle />
-      <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+      <itunes:summary>{{ post.summary }}</itunes:summary>
       <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>
       <itunes:image href="http://agileliv.in/images/{{ post.image }}" />
     <media:content url="{{ post.audio_url }}" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit>

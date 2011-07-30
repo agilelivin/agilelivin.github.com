@@ -2,7 +2,7 @@
 layout: post
 title: Episode 1 - Clutter the Internet
 image: episode1_artwork.jpg
-audio_url: http://soundcloud.com/agilelivin/episode1-clutter-the-internet/download.mp3
+audio_url: http://soundcloud.com/agilelivin/episode1-clutter-the-internet/download.m4a
 author: Steve Holyer &amp; Philipp Küng
 duration: 22:02
 audio_length: 32259213

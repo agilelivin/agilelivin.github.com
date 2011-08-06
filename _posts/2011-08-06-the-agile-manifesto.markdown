@@ -4,6 +4,7 @@ title: Iteration 2 - The Agile Manifesto
 image: iteration2_artwork.jpg
 audio_url: http://soundcloud.com/agilelivin/iteration2-the-agile-manifesto/download.mp3
 author: Steve Holyer &amp; Philipp Küng
+post_date: Sat, 06 Aug 2011 18:00:00 GMT
 duration: 32:50
 audio_length: 47289073
 summary: Lessons learned from the first iteration, what Toyota and SCRUM have in common and what is the Agile Manifesto?

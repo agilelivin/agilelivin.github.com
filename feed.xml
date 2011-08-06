@@ -6,7 +6,7 @@ layout: nil
   <channel>
     <title>agilelivin</title>
     <link>http://agileliv.in</link>
-    <pubDate>{{ site.time }}</pubDate>
+{% for post in site.posts limit:1 %}<pubDate>{{ post.post_date }}</pubDate>{% endfor %}
     <description>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</description>
     <language>en-us</language>
     <itunes:new-feed-url>http://feeds.feedburner.com/agilelivin</itunes:new-feed-url>
@@ -29,7 +29,7 @@ layout: nil
       <title>{{ post.title }}</title>
       <link>http://agileliv.in{{ post.url }}</link>
       <guid>http://agileliv.in{{ post.url }}</guid>
-      <pubDate>{{ site.time }}</pubDate>
+      <pubDate>{{ post.post_date }}</pubDate>
       <author>agileliving@philippkueng.ch (agilelivin)</author>
       <description>{{ post.summary }}</description>
       <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length="{{ post.audio_length }}" />

@@ -35,7 +35,7 @@ layout: nil
       <enclosure type="{{ post.audio_type }}" url="{{ post.audio_url }}" length="{{ post.audio_length }}" />
       <content:encoded>{{ post.content | xml_escape }}</content:encoded>
       <itunes:author>{{ post.author }}</itunes:author>
-      <itunes:duration>{{ post.duration_min }}:{{ post.duration_sec }}</itunes:duration>
+      {{ post.duration }}
       <itunes:subtitle />
       <itunes:summary>{{ post.summary }}</itunes:summary>
       <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>

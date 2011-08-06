@@ -5,8 +5,7 @@ image: iteration1_artwork.jpg
 audio_url: http://soundcloud.com/agilelivin/iteration1-clutter-the-internet/download.m4a
 author: Steve Holyer &amp; Philipp Küng
 post_date: Fri, 29 Jul 2011 18:00:00 GMT
-duration_min: 22
-duration_sec: 02
+duration: <itunes:duration>22:02</itunes:duration>
 audio_length: 32259213
 audio_type: audio/x-m4a
 summary: Steve and Philipp are talking about what the name of this podcast should be and what it will be about.

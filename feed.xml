@@ -13,7 +13,7 @@ layout: nil
     <itunes:subtitle>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</itunes:subtitle>
     <itunes:author>agilelivin</itunes:author>
     <itunes:summary>agilelivin is a more or less regular podcast where Steve and Philipp are talking about how techniques from agile development can be applied in life and vice versa.</itunes:summary>
-    <itunes:image href="http://agileliv.in/images/single_color_black.png" />
+    <itunes:image href="http://agileliv.in/images/podcast_thumbnail.jpg" />
     <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
@@ -23,7 +23,7 @@ layout: nil
     <itunes:category text="Technology">
       <itunes:category text="Software How-To" />
     </itunes:category>
-    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/agilelivin" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="agilelivin" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:thumbnail url="http://agileliv.in/images/single_color_black.png" /><media:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Software How-To</media:category>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/agilelivin" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="agilelivin" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><media:thumbnail url="http://agileliv.in/images/podcast_thumbnail.jpg" /><media:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</media:keywords><media:category scheme="http://www.itunes.com/dtds/podcast-1.0.dtd">Technology/Software How-To</media:category>
 {% for post in site.posts %}
 <item>
       <title>{{ post.title }}</title>

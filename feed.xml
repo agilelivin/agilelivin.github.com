@@ -32,15 +32,15 @@ layout: nil
       <pubDate>{{ post.post_date }}</pubDate>
       <author>agileliving@philippkueng.ch (agilelivin)</author>
       <description>{{ post.summary }}</description>
-      <enclosure type="audio/mpeg" url="{{ post.audio_url }}" length="{{ post.audio_length }}" />
+      <enclosure type="{{ post.audio_type }}" url="{{ post.audio_url }}" length="{{ post.audio_length }}" />
       <content:encoded>{{ post.content | xml_escape }}</content:encoded>
       <itunes:author>{{ post.author }}</itunes:author>
-      <itunes:duration>{{ post.duration }}</itunes:duration>
+      <itunes:duration>{{ post.duration_min }}:{{ post.duration_sec }}</itunes:duration>
       <itunes:subtitle />
       <itunes:summary>{{ post.summary }}</itunes:summary>
       <itunes:keywords>agile, continuous, integration, life, zurich, switzerland, agilelivin, scrum</itunes:keywords>
       <itunes:image href="http://agileliv.in/images/600_{{ post.image }}" />
-    <media:content url="{{ post.audio_url }}" type="audio/mpeg" /><itunes:explicit>no</itunes:explicit>
+    <media:content url="{{ post.audio_url }}" type="{{ post.audio_type }}" /><itunes:explicit>no</itunes:explicit>
 </item>
 {% endfor %}
   <media:credit role="author">agilelivin</media:credit><media:rating>nonadult</media:rating>
